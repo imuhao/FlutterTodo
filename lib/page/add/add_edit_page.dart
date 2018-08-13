@@ -29,8 +29,8 @@ class AddEditPage extends StatelessWidget {
     final form = _formKey.currentState;
     if (form.validate()) {
       final title = _taskTitleKey.currentState.value;
-//      final note = _taskNoteKey.currentState.value;
-      TodoRepository.addTodo(Todo(title, note: "note"));
+      final note = _taskNoteKey.currentState.value;
+      TodoRepository.addTodo(Todo(title, note: note));
     }
   }
 }
