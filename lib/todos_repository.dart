@@ -1,9 +1,9 @@
 import 'dart:async';
 import 'dart:convert';
-import 'package:smile_todo/Bean.dart';
+import 'package:smile_todo/models.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
-class DataUtil {
+class TodoRepository {
   static final String SP_TODO_KEY = "todo_key";
 
   ///获取所有Todo
